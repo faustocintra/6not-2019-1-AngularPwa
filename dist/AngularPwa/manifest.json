@@ -3,7 +3,7 @@
   "short_name": "AngularPwa",
   "theme_color": "#b20000",
   "background_color": "#fafafa",
-  "display": "standalone",
+  "display": "browser",
   "scope": "/",
   "start_url": "https://fgcintra.github.io/6not-2019-1-AngularPwa/AngularPwa/",
   "icons": [
