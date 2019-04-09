@@ -5,7 +5,7 @@ REM de usuário do GitHub
 
 IF [%1] == "" GOTO INSTRUCTIONS
 
-ng build --prod --base-ref /<REPO>/AngularPwa/
+ng build --prod --base-href /<REPO>/AngularPwa/
 git add dist
 git commit -m %1
 git subtree push --prefix=dist origin gh-pages
