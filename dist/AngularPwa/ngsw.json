@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1555118026446,
+  "timestamp": 1555118199807,
   "index": "/6not-2019-1-AngularPwa/AngularPwa/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "/6not-2019-1-AngularPwa/AngularPwa/es2015-polyfills.1e04665e16f944715fd2.js",
         "/6not-2019-1-AngularPwa/AngularPwa/favicon.ico",
         "/6not-2019-1-AngularPwa/AngularPwa/index.html",
-        "/6not-2019-1-AngularPwa/AngularPwa/main.00e31071cb0727f33672.js",
+        "/6not-2019-1-AngularPwa/AngularPwa/main.eb200b51f9331800e1fb.js",
         "/6not-2019-1-AngularPwa/AngularPwa/polyfills.8bbb231b43165d65d357.js",
         "/6not-2019-1-AngularPwa/AngularPwa/runtime.26209474bfa8dc87a77c.js",
         "/6not-2019-1-AngularPwa/AngularPwa/styles.9a4c209dc4341fca0e8d.css"
@@ -55,8 +55,8 @@
     "/6not-2019-1-AngularPwa/AngularPwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/6not-2019-1-AngularPwa/AngularPwa/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "/6not-2019-1-AngularPwa/AngularPwa/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/6not-2019-1-AngularPwa/AngularPwa/index.html": "f0730da7dd6a2c2757bf27921955812be34b230e",
-    "/6not-2019-1-AngularPwa/AngularPwa/main.00e31071cb0727f33672.js": "cffc1789dcf281d33470692bf6386914f3cfc0c5",
+    "/6not-2019-1-AngularPwa/AngularPwa/index.html": "060c1767f71f87f4f7977cdcd8c7867ea477a3d2",
+    "/6not-2019-1-AngularPwa/AngularPwa/main.eb200b51f9331800e1fb.js": "df1afce527b98b6384d05475f485f81b568332c6",
     "/6not-2019-1-AngularPwa/AngularPwa/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/6not-2019-1-AngularPwa/AngularPwa/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "/6not-2019-1-AngularPwa/AngularPwa/styles.9a4c209dc4341fca0e8d.css": "a27702aae3eaf9cdbe9c226726845567fe5cfeb9"
