@@ -114,8 +114,6 @@ THE SOFTWARE.
 
 @angular/material/button
 
-@angular/material/card
-
 @angular/material/core
 
 @angular/material/datepicker
@@ -123,8 +121,6 @@ THE SOFTWARE.
 @angular/material/dialog
 
 @angular/material/form-field
-
-@angular/material/grid-list
 
 @angular/material/list
 
