@@ -10,5 +10,5 @@ else
    git add dist
    git commit -m %1
    git subtree push --prefix=dist origin gh-pages
-   chrome "https://fgcintra.github.io/6not-2019-1-AngularPwa/AngularPwa"
+   chrome --incognito "https://fgcintra.github.io/6not-2019-1-AngularPwa/AngularPwa"
 fi
