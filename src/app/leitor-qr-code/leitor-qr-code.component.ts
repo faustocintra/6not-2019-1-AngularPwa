@@ -1,4 +1,6 @@
 import { Component, VERSION, OnInit, ViewChild } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
+import { Location } from '@angular/common';
 
 import { ZXingScannerComponent } from '@zxing/ngx-scanner';
 
@@ -16,6 +18,8 @@ export class LeitorQrCodeComponent implements OnInit {
   @ViewChild('scanner')
   scanner: ZXingScannerComponent;
 
+  constructor(private snackBar: MatSnackBar, private location: Location) {}
+
   hasDevices: boolean;
   hasPermission: boolean;
   qrResultString: string;
@@ -23,6 +27,8 @@ export class LeitorQrCodeComponent implements OnInit {
 
   availableDevices: MediaDeviceInfo[];
   currentDevice: MediaDeviceInfo;
+
+  a = new AudioContext();
 
   ngOnInit(): void {
     this.scanner.camerasFound.subscribe((devices: MediaDeviceInfo[]) => {
@@ -55,7 +61,9 @@ export class LeitorQrCodeComponent implements OnInit {
   handleQrCodeResult(resultString: string) {
     // console.debug('Result: ', resultString);
     this.qrResultString = resultString;
-    alert(resultString);
+    this.snackBar.open(resultString, '', {duration: 2000});
+    this.beep(100, 520, 200);
+    this.location.back();
   }
 
   onDeviceSelectChange(selected: string) {
@@ -78,6 +86,20 @@ export class LeitorQrCodeComponent implements OnInit {
     };
 
     return states['' + state];
-}
+  }
+
+  beep(vol: number, freq: any, duration: number) {
+    let v: any;
+    let u: any;
+    v = this.a.createOscillator();
+    u = this.a.createGain();
+    v.connect(u);
+    v.frequency.value = freq;
+    v.type = 'square';
+    u.connect(this.a.destination);
+    u.gain.value = vol * 0.01;
+    v.start(this.a.currentTime);
+    v.stop(this.a.currentTime + duration * 0.001);
+  }
 
 }

@@ -9,6 +9,9 @@ export class GeoLocService {
 
   obterPos(options: PositionOptions = null): Promise<any> {
     return new Promise((resolve, reject) => {
+      if (!navigator.geolocation) {
+        throw new Error('Geolocalização não suportada');
+      }
       navigator.geolocation.getCurrentPosition(resolve, reject, options);
     });
   }

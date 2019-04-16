@@ -8,8 +8,8 @@ import { GeoLocService } from '../services/geo-loc.service';
 })
 export class GeoLocComponent implements OnInit {
 
-  FATEC_LATITUDE = -20.514388949147456;
-  FATEC_LONGITUDE = -47.400083541870124;
+  FATEC_LATITUDE = -20.5144785;
+  FATEC_LONGITUDE = -47.4003616;
 
   constructor(private geoLocSrv: GeoLocService) { }
   public pos: any;
@@ -23,7 +23,7 @@ export class GeoLocComponent implements OnInit {
       console.log(this.pos);
     } catch (e) {
       console.error(e);
-      this.msgErro = e;
+      this.msgErro = 'Você precisa permitir a obtenção da sua localização';
     }
   }
 
