@@ -1,7 +1,7 @@
 {
   "name": "AngularPwa",
   "short_name": "AngularPwa",
-  "theme_color": "#1976d2",
+  "theme_color": "#b20000",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",

@@ -11,11 +11,19 @@ import { MaterialModule } from '../app/material/material.module';
 import { TodoComponent } from './todo/todo.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { InicioComponent } from './inicio/inicio.component';
+import { LeitorQrCodeComponent } from './leitor-qr-code/leitor-qr-code.component';
+
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import { GeoLocComponent } from './geo-loc/geo-loc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    InicioComponent,
+    LeitorQrCodeComponent,
+    GeoLocComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +33,7 @@ import { environment } from '../environments/environment';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ZXingScannerModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

@@ -1,0 +1,23 @@
+<mat-grid-list cols="2" rowHeight="2:1" *ngIf="coords">
+  <mat-grid-tile>
+    <strong>Latitude</strong>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    {{coords[0]}}
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <strong>Longitude</strong>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    {{coords[1]}}
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-card *ngIf="!coords">
+  <mat-card-header>
+    <mat-card-title>Erro</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    {{msgErro}}
+  </mat-card-content>
+</mat-card>
